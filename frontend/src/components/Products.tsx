@@ -14,7 +14,7 @@ export default function ListingPage() {
   useEffect(() => {
     const loadProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5001');
+        const response : any = await axios.get('http://localhost:5001');
         setProducts(response.data.products);
       } catch (error) {
         console.error('Error fetching products:', error);
