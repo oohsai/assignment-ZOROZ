@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { Star, ChevronDown, ShoppingCart, Zap } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { CheckboxIcon } from '@radix-ui/react-icons'
 
 export default function ProductItem() {
   const [mainImage, setMainImage] = useState("https://m.media-amazon.com/images/I/31tH9CjR5LL._SY445_SX342_QL70_FMwebp_.jpg")
@@ -149,7 +148,9 @@ export default function ProductItem() {
                     </Button>
                     <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">
                       <Zap className="w-4 h-4 mr-2" />
+                      <Link href={'/checkout'}>
                       Buy Now
+                      </Link>
                     </Button>
                   </div>
                 </div>

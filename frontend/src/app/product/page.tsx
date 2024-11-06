@@ -1,3 +1,4 @@
+
 import CatNav from "@/components/CategoriesNav";
 import Navbar from "@/components/NavBar";
 import ProductItem from "@/components/ProductItem";

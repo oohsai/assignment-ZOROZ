@@ -3,6 +3,7 @@ import React, { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 interface Product {
   id: number
@@ -64,14 +65,16 @@ function MovingCard() {
       >
         {products.map((product) => (
           <div key={product.id} className="min-w-full flex-shrink-0">
-            <Image
-              src={product.image}
-              alt={`Product ${product.id}`}
-              width={1000}
-              height={1000}
-              className="object-cover w-full h-full"
-              priority
-            />
+            <Link href={'/product'}>
+              <Image
+                src={product.image}
+                alt={`Product ${product.id}`}
+                width={1000}
+                height={1000}
+                className="object-cover w-full h-full"
+                priority
+              />
+            </Link>
           </div>
         ))}
       </div>
@@ -115,6 +118,7 @@ function Cards() {
 }  
 
 function Card() {
+
     return (
         <div className="backdrop-blur-lg bg-white bg-opacity-100 rounded-none p-5 rounded-lg mx-10">
             <div className="text-xl font-extrabold">
@@ -123,14 +127,16 @@ function Card() {
             <div className="flex gap-6 grid grid-cols-2">
             {productCard.map((product) => (
           <div key={product.id} className="flex-shrink-0">
-            <Image
-              src={product.image}
-              alt={`Product ${product.id}`}
-              width={500}
-              height={500}
-              className="object-cover w-full h-full"
-              priority
-            />
+            <Link href={'/product'}>
+              <Image
+                src={product.image}
+                alt={`Product ${product.id}`}
+                width={500}
+                height={500}
+                className="object-cover w-full h-full"
+                priority
+              />
+            </Link>
             <div className="font-light text-sm">{product.name}</div>
           </div>
         ))}

@@ -94,18 +94,17 @@ export default function CheckoutPage() {
                 <div className="text-green-700 font-bold mb-4">Arriving 7 Nov 2024</div>
                 <div className="flex gap-4 mb-4">
                   <Image
-                    src="/placeholder.svg?height=100&width=100"
-                    alt="JBL Headphones"
+                    src="https://m.media-amazon.com/images/I/31tH9CjR5LL._SY445_SX342_QL70_FMwebp_.jpg"
+                    alt="Whirpool"
                     width={100}
                     height={100}
                     className="object-contain"
                   />
                   <div>
                     <h3 className="font-medium">
-                      JBL C100SI Wired In Ear Headphones with Mic, JBL Pure Bass Sound, One Button Multi-function Remote,
-                      Premium Metallic Finish, Angled Buds for Comfort fit (Black)
+                    Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205 WDE CLS 2S SAPPHIRE BLUE-Z, Blue, 2023 Model)
                     </h3>
-                    <div className="text-red-600 font-bold mt-1">₹599.00</div>
+                    <div className="text-red-600 font-bold mt-1">₹11,990</div>
                     <div className="flex items-center gap-2 mt-1">
                       <select className="border rounded px-2 py-1">
                         <option>Qty: 1</option>
@@ -172,7 +171,7 @@ export default function CheckoutPage() {
 
           <div className="lg:col-span-1">
             <Card className="p-6">
-              <Button className="w-full mb-4 bg-yellow-400 hover:bg-yellow-500 text-black">Place your order</Button>
+              <Button className="w-full mb-4 bg-yellow-400 hover:bg-yellow-500 text-black"><Link href={'checkout/status'}>Place your order</Link></Button>
               <p className="text-xs text-gray-600 mb-4">
                 By placing your order, you agree to Amazon's{' '}
                 <Link href="#" className="text-blue-600">
@@ -189,7 +188,7 @@ export default function CheckoutPage() {
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
                     <span>Items:</span>
-                    <span>₹599.00</span>
+                    <span>₹11,990</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Delivery:</span>
@@ -197,7 +196,7 @@ export default function CheckoutPage() {
                   </div>
                   <div className="flex justify-between">
                     <span>Total:</span>
-                    <span>₹639.00</span>
+                    <span>₹11,990</span>
                   </div>
                   <div className="flex justify-between text-red-600">
                     <span>Promotion Applied:</span>
@@ -205,11 +204,11 @@ export default function CheckoutPage() {
                   </div>
                   <div className="flex justify-between font-bold text-lg pt-4 border-t">
                     <span>Order Total:</span>
-                    <span>₹599.00</span>
+                    <span>₹11,990.00</span>
                   </div>
                 </div>
                 <div className="mt-4 text-red-600">
-                  <div className="font-bold">Your Savings: ₹ 740.00 (55%)</div>
+                  <div className="font-bold">Your Savings: ₹ 40.00</div>
                   <ul className="list-disc ml-4 text-sm">
                     <li>FREE Delivery</li>
                     <li>Item discount</li>
