@@ -20,4 +20,5 @@ This project is a mock eCommerce website built with a frontend on Next.js and a 
 ## Video Walkthrough
 
 You can view a video walkthrough of the website and its features here:
-[![Video Walkthrough](https://github.com/oohsai/assignment-ZOROZ/blob/main/assets/videos/video.mov)]
+
+https://github.com/user-attachments/assets/1458de42-cb89-48f8-a022-6e92021a7f68
